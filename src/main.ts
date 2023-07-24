@@ -91,6 +91,52 @@ import './style.css'
 // alert( 'Сдача ' + a % b)
 
 
+// PZ
+
+// let a = prompt('Какое официальное название JavaScript?')
+// if (a == 'ECMAScript') {
+//     alert('Верно!')
+// } else {
+//     alert('Вы не знаете ECMAScript?')
+// }
+
+
+// let result = (a + b < 4) ? 'Мало' : 'Много'
+// alert(result)
+
+// let number = parseFloat(prompt('Введите число') as string)
+// if (number > 0) {
+//     alert(1)
+// } if else (number < 0) {
+//     alert(-1)
+// } else {
+//     alert(0)
+// }
+
+// let login = ''
+// let massage = (login == 'Сотрудник') ? 'Привет' :
+// (login == 'Директор') ? 'Здравствуйте' :
+// (login == '') ? 'Нет логина' :
+// ''
+// alert(massage)
+
+
+// const number = parseFloat(prompt('Введите число между 0 и 3', '') as string)
+//  switch (number) {
+//      case 0:
+//          alert('Вы ввели число 1')
+//          break
+//     case 1:
+//         alert('Вы ввели число 1')
+//         break
+//     case 2:
+//     case 3:    
+//         alert('Вы ввели число 2, а может и 3')         
+//  }
+ 
+
+
+
 
 
 
