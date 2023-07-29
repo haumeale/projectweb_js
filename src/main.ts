@@ -121,7 +121,7 @@ import './style.css'
 // alert(massage)
 
 
-// const number = parseFloat(prompt('Введите число между 0 и 3', '') as string)
+// const number = +(prompt('Введите число между 0 и 3', '') as string)
 //  switch (number) {
 //      case 0:
 //          alert('Вы ввели число 1')
@@ -131,9 +131,70 @@ import './style.css'
 //         break
 //     case 2:
 //     case 3:    
-//         alert('Вы ввели число 2, а может и 3')         
+//         alert('Вы ввели число 2, а может и 3')      
+//         break   
 //  }
  
+
+// PZ 1
+
+
+// let age = +(prompt('Введите возраст') as string)
+// let age = 13
+//  if (age >= 14 && age <= 90) {
+//      console.log(true)
+//  }
+//  if (!(age >= 14 && age <= 90)) {
+//      console.log(1)
+//  }
+//  if (age < 14 || age > 90) {
+//      console.log(2)
+//  }
+
+// let a = +(prompt('Enter number 1 - 12') as string)
+// switch (a) {
+//     case 1:
+//         alert('Январь')
+//         break
+//     case 2:
+//         alert('Ферваль')
+//         break    
+//     case 3:
+//         alert('Март')
+//         break 
+//     case 4:
+//         alert('Апрель')
+//         break
+//     case 5:
+//         alert('Май')
+//         break
+//     case 6:
+//         alert('Июнь')
+//         break 
+//     case 7:
+//         alert('Июль')
+//         break
+//     case 8:
+//         alert('Август')
+//         break
+//     case 9:
+//         alert('Сентябрь')
+//         break    
+//     case 10:
+//         alert('Октябрь')
+//         break
+//     case 11:
+//         alert('Ноябрь') 
+//         break
+//     case 12:
+//         alert('Декабрь')  
+//         break
+//     default:
+//         alert('Это не число месяца')
+//         break                                  
+
+// }
+
 
 
 
