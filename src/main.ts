@@ -197,10 +197,145 @@ import './style.css'
 
 
 
+// ДЗ 2
 
+// 1.
+// let a = +(prompt("Введите ваш возраст") as string);
+// if (0 < a && a < 12) {
+//  alert("ребёнок");
+// }if (12 <= a && a < 18) {
+//   alert("подросток");
+// }if (18 <= a && a <= 60) {
+//   alert("взрослый");
+// }if (60 < a) {
+//   alert("пенсионер");
+// }
 
+// 2.
+// let a = +(prompt("Введите цифру от 0 до 9") as string);
+//   switch (a) {
+//    case 1:
+//     alert("!");
+//     break;
+//    case 2:
+//     alert("@");
+//     break;
+//    case 3:
+//     alert("#");
+//     break;
+//    case 4:
+//     alert("$");
+//     break;
+//    case 5:
+//     alert("%");
+//     break;
+//    case 6:
+//     alert("^");
+//     break; 
+//       case 7:
+//     alert("&");
+//     break;
+//       case 8:
+//     alert("*");
+//     break;
+//     case 9:
+//      alert("(")
+//      break;
+     
+//   }
 
+// 3.
+// let a = +(prompt("Введите трехзначное число") as string);
+// let b = a % 10;
+// let c = ((a - b) / 10) % 10;
+// let d = ((((a - b) / 10)- c) / 10) % 10;
+// if (b == c == d) {
+//   alert("Все цифры равны");
+// }
+// else if (c == d) {
+//     alert ("Равны первая и вторая цифры") 
+//    }
+// else if (b == c) {
+//  alert ("Равны вторая и третья цифры") 
+// }
+// else if (b == d) {
+//  alert ("Равны первая и третья цифры") 
+// }
 
+// 4.
+// let a = +(prompt('Введите год') as string)
+// if (a % 400 == 0 || a % 4 == 0 && a % 100 != 0){
+// alert('Високосный год')}
+// else {
+//     alert('Невисокосный год')
+// }
 
+// 6.
+// let a = prompt('Введите в какую валюту хотите перевести рубли, EUR, UAN, AZN','Eur')
+// let b = parseFloat(prompt('Введите количество денег, которые вы хотели бы перевести в калькуляторе валют', '10000') as string)
+// const value = {
+//     Eur: 103.47,
+//     Uan: 12.59,
+//     Azn: 53.24
+// }
+// switch(a){
+//     case 'Eur': 
+//     alert(b * value.Eur)
+//     break
+//     case 'Uan':
+//     alert(b * value.Uan)
+//     break
+//     case 'Azn':
+//     alert(b * value.Azn)
+//     break
+//     default:
+//         alert('Что то пошло не так...')
+// }
 
+// 7.
+// let a = +(prompt('Введите сумму покупки') as string )
+// let c = ((a / 100) * 3)
+// let b = ((a / 100) * 5)
+// let x = ((a / 100) * 7)
+// if  (200 <= a && a <= 300) {
+//     alert(a - c)
+// } else if (301 <= a && a <= 500) {
+//     alert(a - b) 
+// } else if (a > 500 ) {
+//     alert(a - x)
+// } else {
+//     alert(a)
+// }
 
+// 8.
+// let a = +(prompt('Введите периметр квадрата') as string)
+// let b = +(prompt('Введите длину откружности') as string)
+// let c = (a / 4)
+// if (c >= b) {
+//     alert('Такая окружность может поместиться в квадрат')
+// } else {
+//     alert('Такая окружность не может поместиться в квадрат')
+// }
+
+// 9.
+// const a = {
+//     aOne: prompt('Какие у меня любимые цветы?', 'Варианты ответов: Розы, Альстромерии, Лилии'),
+//     aTwo: prompt('Какого числа у меня день рождение?', 'Варианты ответов: 9, 21, 4'),
+//     aThree: prompt('Кто из них мне нравится больше всего?', 'Варианты ответов: Пчёлы, Паучки, Кузнечики')
+// } 
+// let points = 0
+// if (a.aOne == 'Лилии'){
+//     points += 2
+// }
+// if (a.aTwo == '4'){
+//     points += 2
+// } 
+// if (a.aThree == 'Паучки'){
+//     points += 2
+// }
+// if(points > 0){
+//     alert(`Вы набрали ${points} Очка(ов)`)
+// }
+// else {
+//     alert('Ты меня совсем не знаешь...')
+// }
