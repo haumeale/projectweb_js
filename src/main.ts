@@ -249,7 +249,7 @@ import './style.css'
 // let b = a % 10;
 // let c = ((a - b) / 10) % 10;
 // let d = ((((a - b) / 10)- c) / 10) % 10;
-// if (b == c == d) {
+// if (b == c && c == d && b == d) {
 //   alert("Все цифры равны");
 // }
 // else if (c == d) {
@@ -339,3 +339,24 @@ import './style.css'
 // else {
 //     alert('Ты меня совсем не знаешь...')
 // }
+
+
+// PZ WHILE FOR
+
+// let i = 0
+// while ( i < 3){
+//     alert(`number ${i}!`)
+//     i++
+// }
+
+// let num = 0
+// do {
+//     num = +(prompt('Введите число больше 100') as string)
+// }    while(num <=100)
+
+let n = 10
+for (let i=2;i<=n;i++){
+    for (let j=2;j<i;j++){
+        if (i%j) break
+    }
+}
