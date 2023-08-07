@@ -354,9 +354,67 @@ import './style.css'
 //     num = +(prompt('Введите число больше 100') as string)
 // }    while(num <=100)
 
-let n = 10
-for (let i=2;i<=n;i++){
-    for (let j=2;j<i;j++){
-        if (i%j) break
-    }
-}
+// let n = 10
+// for (let i=2;i<=n;i++){
+//     for (let j=2;j<i;j++){
+//         if (i%j) break
+//     }
+// }
+
+
+// DZ 3
+
+// 1.
+// Подсчитать сумму всех чисел в заданном пользователем
+// диапазоне.
+// let a = +(prompt('Введите первое число') as string)
+// let b = +(prompt('Введите второе число') as string)
+// let sum = 0
+// while (a <= b){
+//     sum += a
+//     a++
+// } alert(sum)
+
+// 2.
+// Запросить 2 числа и найти только наибольший общий
+// делитель.
+// let a = +(prompt('Введите первое число') as string)
+// let b = +(prompt('Введите второе число') as string)
+// while(a != b){
+//     if (a > b){
+//         a = a - b
+//     } else {
+//        b = b - a
+//     }
+// } alert(a) 
+
+// 6.
+// Зациклить калькулятор. Запросить у пользователя 2 числа
+// и знак, решить пример, вывести результат и спросить, хо-
+// чет ли он решить еще один пример. И так до тех пор, пока
+// пользователь не откажется.
+// let answer = true
+// while (answer) {
+//   let intNumb1 = parseFloat(prompt('Введите число/цифру, которое хотите вычислить', '12') as string)
+//   let intSign = prompt('Введите знак, который будет вычислять', '+ - * /')
+//   let intNumb2 = parseFloat(prompt('Введите число/цыфру, которое хотите вычислить', '12') as string)
+//   let res = 0
+//   switch (intSign) {
+//     case '-':
+//       res = intNumb1 - intNumb2
+//       break
+//     case '+':
+//       res = intNumb1 + intNumb2
+//       break
+//     case '*':
+//       res = intNumb1 * intNumb2
+//       break
+//     case '/':
+//       res = intNumb1 / intNumb2
+//       break
+//   }
+//   answer = confirm(`Результат ${res}. Посчитать что-нибудь ещё?`)
+// }
+
+// 3.
+
