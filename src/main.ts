@@ -484,3 +484,50 @@ import './style.css'
 // }  
  
 // } 
+
+
+// PZ function
+// 1.
+// function min(a, b){
+//     if(a < b){
+//         return a
+//     } else {
+//         return b 
+//     }
+// }
+//  min(2, 5)
+
+// 2.
+// let a = +(prompt('Введите число') as string)
+// let b = +(prompt('Введите степень') as string)
+//  function one(a, b){
+//      let result = a
+
+//      for (let i = 1; i < b; i++){
+//      result *= a
+//      }
+//      return result
+//  }
+ 
+//  if (b >= 1 && b % 1 == 0){
+//      alert( one(a, b))
+//  } else {
+//      alert('Введите другую степень')
+//  }
+
+// 5.
+// function showCalc(n:number){
+//     for (let i = 2; i<10; i++){
+//         console.log(n,'*', i, '=', n*1)
+//     }
+// }
+
+// for (let i = 2; i<10; i++ ){
+//     showCalc(i)
+// }
+
+// 6.
+// Написать функцию, которая реализует работу оператора %.
+// Функция принимает 2 параметра и возвращает остаток от
+// деления первого параметра на второй. В функции исполь-
+// зовать только + - * /, оператор % не использовать.
