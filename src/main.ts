@@ -432,7 +432,55 @@ import './style.css'
 // 4.
 // Определить количество цифр в введенном числе.
 // let a = +(prompt ("введите число") as string)
-//    for(let i = 0; a > 1; i ++) {
+//    for(let i = 1; a > 1; i ++) {
 //       a /= 10;
 //       alert ( i );
 //    }
+
+// 7.
+// let day = true;
+// let nextDay = prompt('Напишите сегодняшний день, чтобы увидеть следующий', 'Пятница') as string;
+// while (day) {
+
+//   switch (nextDay) {
+//     case 'Понедельник':
+//       nextDay = 'Вторник'
+//       break
+//     case 'Вторник':
+//       nextDay = 'Среда'
+//       break
+//     case 'Среда':
+//       nextDay = 'Четверг'
+//       break
+//     case 'Четверг':
+//       nextDay = 'Пятница'
+//       break
+//     case 'Пятница':
+//       nextDay = 'Суббота'
+//       break
+//     case 'Суббота':
+//       nextDay = 'Воскресенье'
+//       break
+//     case 'Воскресенье':
+//       nextDay = 'Понедельник'
+//       break
+//     default:
+//       nextDay = 'Понедельник'
+// }
+
+//   day = confirm(`Cледующий день ${nextDay}, хотите узнать следующий день?`);
+// }
+
+// 9.
+// Вывести таблицу умножения для всех чисел от 2 до 9
+// Каждое число необходимо умножить на числа от 1 до 10
+// console.log("Таблица умножения"); 
+// for (let j = 2; j <= 9; j++){  
+// console.log(""); 
+// for (let i = 1; i <=10; i++)  
+// { 
+// console.log(i + "*" + j + "=" +(i*j) ); 
+ 
+// }  
+ 
+// } 
