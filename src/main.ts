@@ -531,15 +531,31 @@ import './style.css'
 // 1.
 // Написать функцию, которая принимает 2 числа и возвра-
 // щает меньшее из них.
-let a = prompt('Введите первое число','5')
-let b = prompt('Введите второе число','8')
-function moon (a, b){
-    if(a<b){
-        alert(`${b} больше`)
+// let a = prompt('Введите первое число','5')
+// let b = prompt('Введите второе число','8')
+// function moon (a, b){
+//     if(a<b){
+//         alert(`${b} больше`)
+//     }
+//     else{
+//         alert(`${a} больше`)
+//     }
+//     return
+// }
+// moon(a, b)
+
+function unique(arr) {
+    let result = [] 
+    for (let str of arr){
+       if (result.includes(str)) {
+        result.push(str)
+       }
     }
-    else{
-        alert(`${a} больше`)
-    }
-    return
-}
-moon(a, b)
+    return result
+  }
+  
+  let strings = ["кришна", "кришна", "харе", "харе",
+    "харе", "харе", "кришна", "кришна", ":-O"
+  ];
+  
+  alert( unique(strings) ); // кришна, харе, :-O
