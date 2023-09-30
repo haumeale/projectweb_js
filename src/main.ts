@@ -673,3 +673,16 @@ import './style.css'
 //   return abbreviation;
 // }
 // console.log(createAbbreviation("cascading style sheets"))
+
+
+// function isPalindrome(str){
+// const x = str.split("").reverse().join("")
+// return str === x
+// } console.log(isPalindrome("cat"))
+// console.log(isPalindrome("level"))
+// console.log(isPalindrome("шалаш"))
+
+
+
+
+
