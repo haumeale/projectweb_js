@@ -544,18 +544,132 @@ import './style.css'
 // }
 // moon(a, b)
 
-function unique(arr) {
-    let result = [] 
-    for (let str of arr){
-       if (result.includes(str)) {
-        result.push(str)
-       }
-    }
-    return result
-  }
+// function unique(arr) {
+//     let result = [] 
+//     for (let str of arr){
+//        if (result.includes(str)) {
+//         result.push(str)
+//        }
+//     }
+//     return result
+//   }
   
-  let strings = ["кришна", "кришна", "харе", "харе",
-    "харе", "харе", "кришна", "кришна", ":-O"
-  ];
+//   let strings = ["кришна", "кришна", "харе", "харе",
+//     "харе", "харе", "кришна", "кришна", ":-O"
+//   ];
   
-  alert( unique(strings) ); // кришна, харе, :-O
+//   alert( unique(strings) ); // кришна, харе, :-O
+
+
+
+
+// DZ modul 2 week 3
+// 1. Написать функцию, которая принимает строку и выводит
+// статистику о ней: количество букв, количество цифр и
+// количество других знаков.
+// function printStatistics(str) {
+//   let lettersCount = 0;
+//   let digitsCount = 0;
+//   let otherCount = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     const x = str[i];
+//     if (/[a-zA-Z]/.test(x)) {
+//       lettersCount++;
+//     } else if (/[а-яА-Я]/.test(x)) {
+//       lettersCount++;
+//     } else if (/[0-9]/.test(x)) {
+//       digitsCount++;
+//     } else {
+//       otherCount++;
+//     }
+//   }
+//   console.log("Количество букв:", lettersCount);
+//   console.log("Количество цифр:", digitsCount);
+//   console.log("Количество других знаков:", otherCount);
+// }
+// const str = "Hello123! Пример 345 строки.";
+// printStatistics(str);
+
+
+// 2.Написать функцию, которая принимает двузначное число
+// и возвращает его в текстовом виде.
+// Например: 35 – тридцать пять, 89 – восемьдесят девять,
+// 12 – двенадцать.
+// function numberToText(num) {
+//   const units = [
+//     "", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять"
+//   ];
+
+//   const tens = [
+//     "", "", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"
+//   ];
+
+//   const exceptions = {
+//     10: "десять",
+//     11: "одиннадцать",
+//     12: "двенадцать",
+//     13: "тринадцать",
+//     14: "четырнадцать",
+//     15: "пятнадцать",
+//     16: "шестнадцать",
+//     17: "семнадцать",
+//     18: "восемнадцать",
+//     19: "девятнадцать"
+//   };
+
+//   if (num < 10) {
+//     return units[num];
+//   }
+
+//   if (num >= 10 && num < 20) {
+//     return exceptions[num];
+//   }
+
+//   const unitDigit = num % 10;
+//   const tensDigit = Math.floor(num / 10);
+
+//   return tens[tensDigit] + " " + units[unitDigit];
+// }
+// console.log(numberToText(89))
+
+// 3.Написать функцию, которая заменяет в полученной строке
+// большие буквы на маленькие, маленькие – на большие, а
+// цифры – на знак нижнего подчеркивания.
+// function replaceCharacters(str) {
+//   let result = "";
+
+//   for (let i = 0; i < str.length; i++) {
+//     const x = str[i];
+
+//     if (/[A-Z]/.test(x)) {
+//       result += x.toLowerCase();
+//     } else if (/[a-z]/.test(x)) {
+//       result += x.toUpperCase();
+//     } else if (/[0-9]/.test(x)) {
+//       result += "_";
+//     } else {
+//       result += x;
+//     }
+//   }
+
+//   return result;
+// }
+// console.log(replaceCharacters("Hello123"))
+
+
+// 5.Написать функцию, которая принимает словосочетание
+// и превращает его в аббревиатуру.
+// Например: cascading style sheets в CSS, объектно-
+// ориентированное программирование в ООП.
+// function createAbbreviation(x) {
+//   const words = x.split(" ");
+//   let abbreviation = "";
+
+//   for (let i = 0; i < words.length; i++) {
+//     abbreviation += words[i][0].toUpperCase();
+//   }
+
+//   return abbreviation;
+// }
+// console.log(createAbbreviation("cascading style sheets"))
