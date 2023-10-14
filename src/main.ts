@@ -673,3 +673,65 @@ import './style.css'
 //   return abbreviation;
 // }
 // console.log(createAbbreviation("cascading style sheets"))
+
+
+
+// Реализовать класс, описывающий окружность. В классе долж-
+// ны быть следующие компоненты:
+// ■ поле, хранящее радиус окружности;
+// ■ get-свойство, возвращающее радиус окружности;
+// ■ set-свойство, устанавливающее радиус окружности;
+// ■ get-свойство, возвращающее диаметр окружности;
+// ■ метод, вычисляющий площадь окружности;
+// ■ метод, вычисляющий длину окружности.
+// Продемонстрировать работу свойств и методов.
+
+// class Circle {
+//     constructor(radius) {
+//       this._radius = radius;
+//     }
+  
+//     get radius() {
+//       return this._radius;
+//     }
+  
+//     set radius(value) {
+//       if (value >= 0) {
+//         this._radius = value;
+//       } else {
+//         console.log("Радиус не может быть отрицательным.");
+//       }
+//     }
+  
+//     get diameter() {
+//       return this._radius * 2;
+//     }
+  
+//     get area() {
+//       return Math.PI * this._radius ** 2;
+//     }
+  
+//     get circumference() {
+//       return 2 * Math.PI * this._radius;
+//     }
+//   }
+  
+//   const circle = new Circle(8);
+  
+//   console.log(circle.radius);
+//   console.log(circle.diameter); 
+//   console.log(circle.area); 
+//   console.log(circle.circumference); 
+
+
+// Реализовать класс PrintMaсhine, которой состоит из:
+// ■ размера шрифта;
+// ■ цвета шрифта;
+// ■ семейства шрифта;
+// ■ метода print(), который принимает текст и печатает его
+// соответствующим шрифтом с помощью document.write().
+// Создать объект такого класса и продемонстрировать работу
+// метода.
+
+
+  
