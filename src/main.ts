@@ -674,4 +674,27 @@ import './style.css'
 // }
 // console.log(createAbbreviation("cascading style sheets"))
 
-// 1
+// Реализовать класс, который описывает css класс.
+// Класс CssClass должен содержать внутри себя:
+// ■ название css класса;
+// ■ массив стилей;
+// ■ метод для установки стиля;
+// ■ метод для удаления стиля;
+// ■ метод getCss(), который возвращает css код в виде стро-
+// ки.
+
+class CssClass {
+    constructor(className){
+        this.className = className
+        this.styles = []
+    }
+
+    setStyle(property, value){
+        this.styles[property] = value
+    }
+
+    removeStyle(property){
+        delete
+        this.styles[property]
+    }
+}
