@@ -683,18 +683,57 @@ import './style.css'
 // ■ метод getCss(), который возвращает css код в виде стро-
 // ки.
 
-class CssClass {
-    constructor(className){
-        this.className = className
-        this.styles = []
-    }
+// class CssClass {
+//     constructor(className){
+//         this.className = className
+//         this.styles = []
+//     }
 
-    setStyle(property, value){
-        this.styles[property] = value
-    }
+//     setStyle(property, value){
+//         this.styles[property] = value
+//     }
 
-    removeStyle(property){
-        delete
-        this.styles[property]
+//     removeStyle(property){
+//         delete
+//         this.styles[property]
+//     }
+// }
+
+
+
+class Circle {
+    constructor(radius) {
+      this._radius = radius;
     }
-}
+  
+    get radius() {
+      return this._radius;
+    }
+  
+    set radius(value) {
+      if (value >= 0) {
+        this._radius = value;
+      } else {
+        console.error("Радиус не может быть отрицательным.");
+      }
+    }
+  
+    get diameter() {
+      return this._radius * 2;
+    }
+  
+    get area() {
+      return Math.PI * this._radius ** 2;
+    }
+  
+    get circumference() {
+      return 2 * Math.PI * this._radius;
+    }
+  }
+  
+  
+  const circle = new Circle(8);
+  console.log(circle.radius); 
+  console.log(circle.diameter); 
+  console.log(circle.area); 
+  console.log(circle.circumference);
