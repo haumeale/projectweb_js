@@ -701,39 +701,245 @@ import './style.css'
 
 
 
-class Circle {
-    constructor(radius) {
-      this._radius = radius;
-    }
+// DZ modul 2 week 4
+
+// 1.
+// class Circle {
+//     constructor(radius) {
+//       this._radius = radius;
+//     }
   
-    get radius() {
-      return this._radius;
-    }
+//     get radius() {
+//       return this._radius;
+//     }
   
-    set radius(value) {
-      if (value >= 0) {
-        this._radius = value;
-      } else {
-        console.error("Радиус не может быть отрицательным.");
-      }
-    }
+//     set radius(value) {
+//       if (value >= 0) {
+//         this._radius = value;
+//       } else {
+//         console.error("Радиус не может быть отрицательным.");
+//       }
+//     }
   
-    get diameter() {
-      return this._radius * 2;
-    }
+//     get diameter() {
+//       return this._radius * 2;
+//     }
   
-    get area() {
-      return Math.PI * this._radius ** 2;
-    }
+//     get area() {
+//       return Math.PI * this._radius ** 2;
+//     }
   
-    get circumference() {
-      return 2 * Math.PI * this._radius;
-    }
-  }
+//     get circumference() {
+//       return 2 * Math.PI * this._radius;
+//     }
+//   }
   
   
-  const circle = new Circle(8);
-  console.log(circle.radius); 
-  console.log(circle.diameter); 
-  console.log(circle.area); 
-  console.log(circle.circumference);
+//   const circle = new Circle(8);
+//   console.log(circle.radius); 
+//   console.log(circle.diameter); 
+//   console.log(circle.area); 
+//   console.log(circle.circumference);
+
+
+// Реализуйте класс ExtendedDate, унаследовав его от стандарт -
+//   ного класса Date и добавив следующие возможности:
+// ■ метод для вывода даты(числа и месяца) текстом;
+// ■ метод для проверки – это прошедшая дата или будущая
+//   (если прошедшая, то метод возвращает false; если буду -
+//   щая или текущая, то true);
+// ■ метод для проверки – високосный год или нет;
+// ■ метод, возвращающий следующую дату.
+// Создайте объект класса ExtendedDate и выведите на экран
+// результаты работы новых методов.
+
+// function numberToText(n: number) {
+//     if (n < -99 || n > 99) return 'Неверное число'
+//     let minusStr = ''
+//     let sN = ''
+//     const numberWithMinus = n.toString()
+//     if (numberWithMinus[0] == '-') {
+//       minusStr = 'минус '
+//       sN = numberWithMinus.slice(1)
+//     } else {
+//       sN = n.toString()
+//     }
+//     const oneNumber = [, 'первое', 'второе', 'третье', 'четвёртое', 'пятое', 'шестое', 'седьмое', 'восьмое', 'девятое']
+//     const secondOfTen = ['десятое', 'одиннадцатое', 'двенадцатое', 'тринадцатое', 'четырнадцатое', 'пятьнадцатое', 'шестьнадцатое', 'семьнадцатое', 'восемьнадцатое', 'девятьнадцатое']
+//     const firstOfMoreTen = [, , 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто']
+//     const firstOfMoreTenRound = [, , 'двадцатое', 'тридцатое', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто']
+//     if (sN.length == 1) {
+//       return minusStr + oneNumber[+sN[0]]
+//     }
+//     if (sN.length == 2) {
+//       if (sN[0] == '1') {
+//         return minusStr + secondOfTen[+sN[1]]
+//       }
+//       if (sN[1] == '0') {
+//         return minusStr + firstOfMoreTenRound[+sN[0]]
+//       }
+//       return minusStr + firstOfMoreTen[+sN[0]] + ' ' + oneNumber[+sN[1]]
+//     }
+//   }
+  
+//   class ExtendedDate extends Date {
+//     getRussianDate() {
+//       const month = ['января', 'февряля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
+//       return numberToText(this.getDate()) + ' ' + month[this.getMonth()]
+//     }
+//     isFuture() {
+//       return this.getTime() > Date.now()
+//     }
+//     isLeap() {
+//       const year = this.getFullYear()
+//       return year%4==0 && (year%100!=0 || year%400==0)
+//     }
+//     nextDate() {
+//       return new ExtendedDate(this.setDate(this.getDate()+1))
+//     }
+//   }
+  
+//   console.log(new Date('10-02-2023'))
+//   console.log(new ExtendedDate('10-02-2023'))
+//   console.log(ExtendedDate.now())
+//   console.log(new ExtendedDate(Date.now()-24*3600*1000).getRussianDate())
+//   console.log(new ExtendedDate(Date.now()-24*3600*1000).isFuture())
+//   console.log(new ExtendedDate().isFuture())
+//   console.log(new ExtendedDate(Date.now() + 24 * 3600 * 1000).isFuture())
+//   console.log(new ExtendedDate().isLeap())
+//   console.log(new ExtendedDate('10-02-2024').isLeap())
+//   console.log(new ExtendedDate('10-02-2300').isLeap())
+//   console.log(new ExtendedDate('10-02-2400').isLeap())
+//   console.log(new ExtendedDate().nextDate().nextDate().nextDate())
+  
+// Реализовать класс, описывающий простой маркер. В классе
+// должны быть следующие компоненты:
+// ■ поле, которое хранит цвет маркера;
+// ■ поле, которое хранит количество чернил в маркере (в про-
+// центах);
+// ■ метод для печати (метод принимает строку и выводит
+// текст соответствующим цветом; текст выводится до тех
+// пор, пока в маркере есть чернила; один не пробельный
+// символ – это 0,5% чернил в маркере).
+// Реализовать класс, описывающий заправляющийся маркер,
+// унаследовав его от простого маркера и добавив метод для заправки
+// маркера.
+// Продемонстрировать работу написанных методов.
+// const markerInput = document.getElementById('marker') as HTMLInputElement
+// const typeMarker = document.getElementById('type_marker') as HTMLDivElement
+// const refuillButton = document.getElementById('refill')as HTMLButtonElement
+// class Marker {
+//   color
+//   ink = 100
+//   constructor(color:string, ink:number){
+//     this.color = color
+//     this.ink = ink
+//   }
+//   draw(data:string){
+//     typeMarker.innerHTML += `<span style="opacity: ${this.ink/100}; color:${this.color}">${data}</span>`
+//     if(data != ' ') this.ink -=0.5
+//   }
+//   refuill(){
+//     console.log(this.ink)
+//     this.ink=100
+//   }
+// }
+// const myMarker = new Marker("red", 80);
+
+// document.addEventListener('click',(e)=>{
+//   // @ts-ignore
+//   if (e.target.id == 'refill') {
+    
+//     console.log(myMarker.ink)
+//     myMarker.refuill()
+
+//   }
+// })
+
+
+// markerInput.addEventListener('input',(e)=>{
+//   const inputEvent = e as InputEvent
+//   if(inputEvent.inputType == 'insertText'){
+//     if (typeof inputEvent.data == 'string') myMarker.draw(inputEvent.data)
+//   }
+// })
+
+// Реализовать класс, описывающий геометрическую фигуру со
+// свойствами и методами:
+// ■ get-свойство для получения названия фигуры;
+// ■ метод для вывода информации о фигуре (стороны и их
+// длина);
+// ■ метод для вычисления площади фигуры;
+// ■ метод для вычисления периметра фигуры.
+// Реализуйте классы-наследники: квадрат, прямоугольник и
+// треугольник. Переопределите методы вывода и вычислений в
+// классах-наследниках.
+// Создайте массив с различными фигурами и выведите инфор-
+// мацию о каждой фигуре, включая площадь и периметр.
+// class Shape {
+//     name
+//     sides
+//     constructor(name: string) {
+//       this.name = name;
+//       this.sides = []; 
+//     }
+  
+//     getName() {
+//       return this.name;
+//     }
+  
+//     addSide(length: number) {
+//       this.sides.push(length);
+//     }
+  
+//     getPerimeter() {
+//       return this.sides.reduce((sum, side) => sum + side, 0);
+//     }
+  
+//     getInfo() {
+//       const sidesInfo = this.sides.map((side, index) => `Сторона ${index + 1}: ${side}`);
+//       return `Фигура: ${this.name}\n${sidesInfo.join('\n')}`;
+//     }
+//   }
+  
+//   class Square extends Shape {
+//     constructor(length: number) {
+//       super('Квадрат');
+//       this.addSide(length);
+//     }
+
+//     getPerimeter() {
+//         return this.sides[0] * 4;
+//       }
+  
+//     getArea() {
+//       return this.sides[0] ** 2;
+//     }
+//   }
+  
+//   class Rectangle extends Shape {
+//     constructor(length:number, width: number) {
+//       super('Прямоугольник');
+//       this.addSide(length);
+//       this.addSide(width);
+//     }
+
+//     getPerimeter() {
+//        return this.sides[0] + this.sides[1] + this.sides[0] + this.sides[1] ;
+//       }
+  
+//     getArea() {
+//       return this.sides[0] * this.sides[1];
+//     }
+//   }
+  
+//   const shapes = [
+//     new Square(3),
+//     new Rectangle(3, 5),
+//   ];
+  
+//   shapes.forEach(shape => {
+//     console.log(shape.getInfo());
+//     console.log(`Периметр: ${shape.getPerimeter()}`);
+//     console.log(`Площадь: ${shape.getArea()}`);
+//   });
