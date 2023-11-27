@@ -943,3 +943,8 @@ import './style.css'
 //     console.log(`Периметр: ${shape.getPerimeter()}`);
 //     console.log(`Площадь: ${shape.getArea()}`);
 //   });
+
+
+
+// Modul 3
+
