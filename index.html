@@ -20,6 +20,19 @@
         document.getElementById("result").innerHTML = "Random number: " + randomNumber;
       }
     </script>
-  
+   <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a recusandae perspiciatis amet, placeat quas natus, dolorum, doloremque veniam ab exercitationem. Dolorum repudiandae nihil fugit inventore animi ab iure nemo?</p>
+
+   <button id="toggleButton" onclick="toggleText()">Hide / show text</button>
+ 
+   <script>
+     function toggleText() {
+       let text = document.getElementById("text");
+       if (text.style.display === "none") {
+         text.style.display = "block";
+       } else {
+         text.style.display = "none";
+       }
+     }
+   </script>
   </body>
 </html>
