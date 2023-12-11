@@ -948,3 +948,14 @@ import './style.css'
 
 // Modul 3
 
+let progressBar = document.getElementById("progress-bar");
+let increaseBtn = document.getElementById("btn-increase");
+
+increaseBtn.addEventListener("click", function() {
+    var currentProgress = parseFloat(progressBar.style.width) || 0;
+    var newProgress = currentProgress + 5;
+
+    if (newProgress <= 100) {
+      progressBar.style.width = newProgress + "%";
+    }
+  });
