@@ -98,3 +98,58 @@ button:focus-visible {
 
 
 /* ///// */
+
+.tap {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -520px;
+}
+
+#result{
+  position: absolute;
+  margin-left: 70px;
+  margin-top: -420px;
+}
+
+#toggleButton{
+  position: absolute;
+  margin-top: -520px;
+  margin-left: 350px;
+}
+
+#text{
+  margin-top: -270px;
+  margin-left: 337px;
+  position:absolute;
+  
+  
+}
+
+#btn-increase{
+  position: absolute;
+  margin-left: 65px;
+}
+
+#first{
+  border: 5px solid rgb(247, 156, 171) ;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 100px;
+  width: 200px;
+
+}
+
+#progress-bar{
+  border: 15px solid rgb(233, 65, 93) 
+}
+
+.like{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -190px;
+}
+
+.counter{
+  margin-left: 38px;
+}

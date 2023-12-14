@@ -4,15 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.css">
+   <link rel="stylesheet" href="/src/style.css">
     <title>Vite + TS</title>
-
-    <style>
-      #contents {
-        padding: 5px;
-        border: 1px green solid;
-      }
-    </style>
   </head>
   <body>
     <div id="app"></div>
@@ -21,7 +14,7 @@
   
 
     <div id="result"></div>
-    <button onclick="generateRandomNumber()">Generate random number</button>
+    <button class="tap" onclick="generateRandomNumber()">Generate random number</button>
     <script>
       function generateRandomNumber() {
         let randomNumber = Math.floor(Math.random() * 101); 
@@ -32,7 +25,7 @@
    
    
    
-   <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque a recusandae perspiciatis amet, placeat quas natus, dolorum, doloremque veniam ab exercitationem. Dolorum repudiandae nihil fugit inventore animi ab iure nemo?</p>
+   <p id="text">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Atque<br> a recusandae perspiciatis amet,<br> placeat quas natus, dolorum, doloremque <br> veniam ab exercitationem. Dolorum <br> repudiandae nihil fugit inventore animi ab iure nemo?</p>
    <button id="toggleButton" onclick="toggleText()">Hide / show text</button>
  
    <script>
@@ -46,25 +39,16 @@
      }
    </script>
 
+<div id="first">
 <div id="progress-bar"></div>
-<button id="btn-increase">Увеличить заполненность</button>
+</div>
+<button id="btn-increase">Add 5 percent</button>
+
+<div class="like">
+  <button class="like_count">&#128077; Like </button>
+  <p class="counter"></p>
+</div>
 
 
-<fieldset id="contents">
-  <legend>#contents</legend>
-  <p>
-    Как насчёт того, чтобы прочитать <a href="https://wikipedia.org">Википедию</a> или посетить <a href="https://w3.org"><i>W3.org</i></a> и узнать о современных стандартах?
-  </p>
-
-  <script>
-    contents.onclick = function(event){
-      function wikiPedia(href){
-        let leaving = confirm ('Leave for ${href}')
-
-      }
-    }
-
-
-  </script>
   </body>
 </html>

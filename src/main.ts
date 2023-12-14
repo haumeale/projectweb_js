@@ -950,12 +950,28 @@ import './style.css'
 
 let progressBar = document.getElementById("progress-bar");
 let increaseBtn = document.getElementById("btn-increase");
+let boxBtn = document.getElementById("first")
 
 increaseBtn.addEventListener("click", function() {
-    var currentProgress = parseFloat(progressBar.style.width) || 0;
-    var newProgress = currentProgress + 5;
+    let currentProgress = parseFloat(progressBar.style.width) || 0;
+    let newProgress = currentProgress + 5;
 
-    if (newProgress <= 100) {
+    if (newProgress <= 89) {
       progressBar.style.width = newProgress + "%";
     }
   });
+
+
+  // Like
+  let realValueParagraph = 0
+  const countParagraph = document.querySelector('.counter') as HTMLParagraphElement
+  const buttonCount = document.querySelector('.like_count') as HTMLButtonElement
+  function onClick(){
+    buttonCount.addEventListener('click',() =>{
+      realValueParagraph += 1
+        countParagraph.innerHTML = `${realValueParagraph}`
+    }
+    )
+  }
+  onClick()
+    countParagraph.innerHTML = `${realValueParagraph}`
