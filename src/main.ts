@@ -974,3 +974,7 @@ increaseBtn.addEventListener("click", function() {
   }
   onClick()
     countParagraph.innerHTML = `${realValueParagraph}`
+
+   ///
+   
+
