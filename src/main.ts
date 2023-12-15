@@ -946,8 +946,7 @@ import './style.css'
 
 
 
-// Modul 3
-
+// 5 %
 let progressBar = document.getElementById("progress-bar");
 let increaseBtn = document.getElementById("btn-increase");
 let boxBtn = document.getElementById("first")
