@@ -77,7 +77,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #f359c5;
+  border-color: #ee59f3;
 }
 button:focus,
 button:focus-visible {
@@ -115,10 +115,12 @@ button:focus-visible {
 
 #text{
  width: 300px;
+ margin-top: 10px;
 }
 
 #btn-increase{
   margin-left: 68px;
+  margin-top: 10px;
 } 
 
  #first{
@@ -178,4 +180,16 @@ p {
 
 #container{
   width: 600px;
+}
+
+.selected {
+  background: rgb(200, 81, 255);
+}
+
+li {
+  cursor: pointer;
+}
+
+#ul{
+  margin-top: 30px;
 }

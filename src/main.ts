@@ -976,5 +976,26 @@ increaseBtn.addEventListener("click", function() {
     countParagraph.innerHTML = `${realValueParagraph}`
 
    ///
-   
+   let listCharacter = document.getElementById("ul")
 
+   listCharacter.onclick = function(event) {
+    if (event.target.tagName != "LI") return;
+
+    if (event.ctrlKey || event.metaKey) {
+      toggleSelect(event.target);
+    } else {
+      singleSelect(event.target);
+    }
+
+    function toggleSelect(li) {
+      li.classList.toggle('selected');
+    }
+
+    function singleSelect(li) {
+      let selected = listCharacter.querySelectorAll('.selected');
+      for(let elem of selected) {
+        elem.classList.remove('selected');
+      }
+      li.classList.add('selected');
+    }
+  }
