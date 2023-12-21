@@ -81,11 +81,72 @@
 
 <!-- /// -->
 <ul id="ul">
-  <li>Кристофер Робин</li>
-  <li>Винни Пух</li>
-  <li>Тигра</li>
-  <li>Кенга</li>
-  <li>Кролик. Просто Кролик.</li>
+  <li>Жуань Мэй</li>
+  <li>Доктор Рацио</li>
+  <li>Искорка</li>
+  <li>Кафка</li>
+  <li>«Грёзы» Пенаконии</li>
 </ul>
+
+<!-- /// -->
+
+<div id="starr"> 
+  <img src="/public/gerta.webp" alt="" id="gerta">
+  <img src="/public/free-png.ru-31.png" alt="" id="cat">
+</div>
+<script>
+  let currentGerta = null
+
+  cat.onmousedown = function(event){
+    let shiftX = event.clientX - cat.getBoundingClientRect().left;
+      let shiftY = event.clientY - cat.getBoundingClientRect().top;
+
+      cat.style.position = 'absolute'
+      cat.style.zIndex = 1000
+      document.body.append(cat)
+
+      moveAt(event.pageX, event.pageY)
+
+      function moveAt(pageX, pageY) {
+        cat.style.left = pageX - shiftX + 'px';
+        cat.style.top = pageY - shiftY + 'px';
+      }
+
+      function onMouseMove(event){
+        moveAt(event.pageX, event.pageY)
+        cat.hidden = true
+        let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+        cat.hidden = false;
+
+        if (!elemBelow) return;
+
+        let gertaBelow = elemBelow.closest('.gerta')
+        if (currentGerta != gertaBelow){
+          if (currentGerta) { 
+            leaveGerta(currentGerta);
+          }
+          currentGerta = gertaBelow;
+          if (currentGerta) { 
+            enterGerta(currentGerta);
+        }
+
+      }
+  }
+  document.addEventListener('mousemove', onMouseMove);
+
+      cat.onmouseup = function() {
+        document.removeEventListener('mousemove', onMouseMove);
+        cat.onmouseup = null;
+      };
+  }
+
+    cat.ondragstart = function() {
+      return false;
+    };
+</script>
+
+<!-- /// -->
+
+
   </body>
 </html>

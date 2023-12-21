@@ -183,7 +183,8 @@ p {
 }
 
 .selected {
-  background: rgb(200, 81, 255);
+  background: rgb(226, 81, 255);
+  width: 149px;
 }
 
 li {
@@ -192,4 +193,27 @@ li {
 
 #ul{
   margin-top: 30px;
+}
+
+/* /// */
+
+#gerta{
+  width: 140px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+#cat{
+  width: 100px;
+  cursor:
+  pointer;
+  margin-left: 30px;
+}
+
+#starr{
+  border: 4px solid rgba(155, 54, 138, 0.678);
+  width: 420px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px #e485dc; 
+  
 }
