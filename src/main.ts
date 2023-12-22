@@ -999,3 +999,19 @@ increaseBtn.addEventListener("click", function() {
       li.classList.add('selected');
     }
   }
+
+  ///
+  let imageElement = document.getElementById("hu")
+  let originalImage = imageElement.src;
+  let newImage = "/public/hutao2.webp"
+
+  imageElement.addEventListener("mouseover" , function(){
+    imageElement.src = newImage;
+  }
+  )
+
+  imageElement.addEventListener("mouseout", function() {
+    imageElement.src = originalImage; 
+  });
+
+  ///
