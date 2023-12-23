@@ -148,5 +148,24 @@
 <!-- /// -->
 <img src="/public/hutao1.webp" alt="" id="hu">
 
+<!-- /// -->
+<div id="slider" class="slider">
+  <div class="thumb"></div>
+</div>
+<script>
+  let thumb = slider.querySelector('.thumb');
+
+  thumb.onmousedown = function(event){
+    let shiftX = event.clientX - thumb.getBoundingClientRect().left
+    document.addEventListener('mousemove', onMouseMove)
+    document.addEventListener('mouseup', onMouseUp)
+     
+    function onMouseMove(event){
+      let p
+    }
+  }
+</script>
+
+
   </body>
 </html>

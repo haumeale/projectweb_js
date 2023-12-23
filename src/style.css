@@ -245,3 +245,23 @@ li {
   margin-top: 40px;
   margin-left: 60px;
 }
+
+.slider {
+  border-radius: 8px;
+  background: #e8a2ee;
+  background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+  width: 310px;
+  height: 20px;
+  margin: 5px;
+  margin-top: 30px;
+}
+
+.thumb{
+  height: 22px;
+  width: 22px;
+  left: 45%; top: 45%;
+  background:  linear-gradient(rgb(149, 43, 153), rgb(148, 248, 248));
+  transform: rotate(-45deg);
+}
+
+  
