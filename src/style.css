@@ -257,9 +257,10 @@ li {
 }
 
 .thumb{
+  cursor: pointer;
+  position: relative;
   height: 22px;
   width: 22px;
-  left: 45%; top: 45%;
   background:  linear-gradient(rgb(149, 43, 153), rgb(148, 248, 248));
   transform: rotate(-45deg);
 }

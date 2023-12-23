@@ -161,8 +161,20 @@
     document.addEventListener('mouseup', onMouseUp)
      
     function onMouseMove(event){
-      let p
+      let walkL = event.clientX - shiftX - slider.getBoundingClientRect().left
+      if (walkL < 0){
+        walkL = 0   
+        }
+        let walkR = slider.offsetWidth - thumb.offsetWidth
+        if (walkL > walkR){
+          walkL = walkR
+        }
+        thumb.style.left = walkL + 'px'
     }
+    function onMouseUp() {
+        document.removeEventListener('mouseup', onMouseUp);
+        document.removeEventListener('mousemove', onMouseMove);
+      }
   }
 </script>
 
