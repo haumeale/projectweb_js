@@ -177,7 +177,39 @@
       }
   }
 </script>
+ <!-- /// -->
+<div class="mai">
+ <table id="ani">
+  <thead class="juju">
+    <th class="n">Jujutsu Kaisen</th>
+    <th class="n">Bleah</th>
+    <th class="n">HxH</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="fff" data-image="/public/Gojo.jpg" onmouseover="changeBackground(this)" onmouseout="resetBackground(this)">Gojo Satory</td>
+      <td data-image="/public/Ichigo.jpg" onmouseover="changeBackground(this)" onmouseout="resetBackground(this)">Ichigo Kurosaki</td>
+      <td data-image="/public/Hisoka.jpg" onmouseover="changeBackground(this)" onmouseout="resetBackground(this)">Hisoka</td>
+    </tr>
+    <tr>
+      <td data-image="/public/Yuta.jpg" onmouseover="changeBackground(this)" onmouseout="resetBackground(this)">Yuta Okkotsu</td>
+      <td data-image="/public/Kisuke.jpg" onmouseover="changeBackground(this)" onmouseout="resetBackground(this)">Urahara Kisuke</td>
+      <td data-image="/public/Kilua.jpg" onmouseover="changeBackground(this)" onmouseout="resetBackground(this)">Kilua</td>
+    </tr>
+  </tbody>
+ </table>
+</div>
+<script>
+  function changeBackground(cell) {
+    var imagePath = cell.getAttribute("data-image");
+    cell.style.backgroundImage = `url(${imagePath})`;
+    cell.style.backgroundSize = "cover";
+  }
 
+  function resetBackground(cell) {
+    cell.style.backgroundImage = "";
+  }
+</script>
 
   </body>
 </html>
