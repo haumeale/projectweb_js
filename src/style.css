@@ -290,5 +290,48 @@ td{
   border: #f589ef 1px solid;
 }
 
+.container{
+  padding-top: 40px;
+  padding-left: 10px;
+}
 
-  
+#numberInput{
+  width: 30px;
+  height: 26px;
+  background: linear-gradient(rgb(150, 43, 153), rgb(224, 185, 236));
+  text-align: center;
+  font-size: 22px;
+}
+
+.ten{
+  padding-top: 30px;
+  width: 490px;
+}
+
+#color{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-block {
+  width: 50px;
+  height: 30px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  margin: 6px; 
+  display: inline-block;
+}
+
+#lldf{
+  width: 400px;
+}
+
+.bee{
+  padding-top: 30px;
+}

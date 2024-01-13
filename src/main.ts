@@ -1016,4 +1016,50 @@ increaseBtn.addEventListener("click", function() {
 
   ///
 
+  let numberInput = document.getElementById("numberInput")
+  let plusInput = document.getElementById("plus")
+  let nimInput = document.getElementById("nim")
+
+  plusInput?.addEventListener("click", function(){
+    let currentValue = parseInt(numberInput.value);
+        numberInput.value = currentValue + 1;
+  })
+
+  nimInput?.addEventListener("click", function(){
+    let currentValue = parseInt(numberInput.value);
+        numberInput.value = currentValue - 1;
+  })
+
+  numberInput.addEventListener("keydown", function(event) {
+    event.preventDefault();
+  });
+
+  ///
+  let addColorBlock = document.getElementById("block")
+
+  addColorBlock.addEventListener("click", function(){
+    let newBlock = document.createElement("div")
+    let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16)
+    newBlock.style.backgroundColor = randomColor
+
+    newBlock.className = "color-block"
+    newBlock.addEventListener("click", function(){
+      removeColorBlock(this)
+    })
+
+    document.getElementById("color").appendChild(newBlock)
+  })
+
+  function removeColorBlock(block) {
+    document.getElementById("color").removeChild(block);
+}
+
+///
+function changeTextColor(event) {
+  var selectedColor = event.target.dataset.color;
+  if (selectedColor) {
+      document.getElementById("lldf").style.color = selectedColor;
+  }
+}
+document.getElementById("color-pallette").addEventListener("click", changeTextColor)
   
