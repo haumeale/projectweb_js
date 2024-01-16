@@ -1062,4 +1062,27 @@ function changeTextColor(event) {
   }
 }
 document.getElementById("color-pallette").addEventListener("click", changeTextColor)
+
+////
+const mainImage = document.getElementById('mainImage')
+const images = ['/public/three.png', '/public/four.png', '/public/five.png', '/public/two.png']
+let currentImageIndex = 0;
+let imageInterval
+
+function changeImage() {
+  mainImage.src = images[currentImageIndex];
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+
+mainImage.addEventListener('mouseover', function() {
+  imageInterval = setInterval(changeImage, 995);
+});
+
+
+mainImage.addEventListener('mouseout', function() {
+  clearInterval(imageInterval);
+  mainImage.src = images[0];
+});
+
   

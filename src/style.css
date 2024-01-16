@@ -335,3 +335,21 @@ td{
 .bee{
   padding-top: 30px;
 }
+
+.image-container {
+  position: relative;
+  width: 600px; 
+  height: 400px; 
+  margin-top: -290px;
+  margin-left: -170px;
+}
+
+.hover-image {
+  width: 200%;
+  height: 200%;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+}
+
+/* .hover-image.hide {
+  opacity: 1; 
+} */
